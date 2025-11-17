@@ -23,10 +23,9 @@ Files included:
 ## 📂 Project Structure  
 
 ├── demand_forecasting_tft.ipynb
-├── sales_train_validation.csv
-├── sell_prices.csv
-├── calendar.csv
-└── README.md
+├── sales_train_validation 1.csv
+├── sell_prices 1.csv
+└── calendar.csv
 
 
 ## 🏁 Results  
@@ -35,5 +34,4 @@ Files included:
 - Demonstrated better inventory planning and revenue uplift  
 
 ## 🤝 Acknowledgments  
-Dataset from Kaggle's **Walmart M5 Forecasting** competition.  
-Developed by *Jaivinay Gudiveka*.
+Dataset from Kaggle's **Walmart M5 Forecasting** competition.
