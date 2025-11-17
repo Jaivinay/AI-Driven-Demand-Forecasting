@@ -1,37 +1,54 @@
-# 🧠 AI-Driven Demand Forecasting & Dynamic Pricing  
+# 🧠 AI-Driven Demand Forecasting & Dynamic Pricing
+
 **Technologies:** Python, PyTorch, Temporal Fusion Transformer (TFT), Reinforcement Learning (PPO)
 
-## 📌 Overview  
-This project uses the Walmart M5 dataset to forecast sales across multiple stores and SKUs using the **Temporal Fusion Transformer (TFT)**.  
-A Reinforcement Learning model (PPO) is implemented to recommend **optimal product prices** to maximize revenue and reduce stock-outs.
+## 📌 Overview
 
-## 🚀 Key Features  
-- Multi-time-series forecasting using **TFT**  
-- **Dynamic pricing** with RL (PPO)  
-- Improves pricing efficiency by ~25%  
-- End-to-end scalable pipeline for retail analytics  
-- Clear notebook with steps, visuals, and results
+This project applies deep learning to solve real-world retail challenges using the Walmart M5 dataset. The **Temporal Fusion Transformer (TFT)** is used to forecast multi-store, multi-SKU sales, capturing seasonality, holidays, promotional effects, and other temporal patterns.
+Additionally, a **Reinforcement Learning (PPO)** agent is implemented to recommend optimal product prices with the goal of maximizing revenue while minimizing stock-outs.
 
-## 📊 Dataset  
-Dataset Source: [Kaggle M5 Forecasting Competition](https://www.kaggle.com/competitions/m5-forecasting-accuracy/data)
+## 🚀 Key Features
 
-Files included:  
-- `sales_train_validation.csv`  
-- `sell_prices.csv`  
-- `calendar.csv`  
+* Multi-time-series forecasting using **Temporal Fusion Transformer**
+* **Dynamic pricing** driven by Proximal Policy Optimization (PPO)
+* Demonstrated **~25% improvement** in pricing efficiency
+* Works across large-scale retail datasets with many SKUs and stores
+* Modular, reproducible notebook with full pipeline and visualizations
+* Scalable deep learning pipeline suitable for production
 
-## 📂 Project Structure  
+## 📊 Dataset
 
-├── demand_forecasting_tft.ipynb
-├── sales_train_validation 1.csv
-├── sell_prices 1.csv
-└── calendar.csv
+Dataset Source:
+👉 [Walmart M5 Forecasting Competition — Kaggle](https://www.kaggle.com/competitions/m5-forecasting-accuracy/data)
 
+Files used:
 
-## 🏁 Results  
-- Improved forecasting accuracy using the Temporal Fusion Transformer  
-- Reinforcement learning increased pricing efficiency by ~25%  
-- Demonstrated better inventory planning and revenue uplift  
+* `sales_train_validation.csv`
+* `sell_prices.csv`
+* `calendar.csv`
 
-## 🤝 Acknowledgments  
-Dataset from Kaggle's **Walmart M5 Forecasting** competition.
+The dataset includes 30,000+ Walmart SKUs across multiple categories, stores, and states, spanning 5+ years of daily sales.
+
+---
+
+## 📊 Results
+
+The **Temporal Fusion Transformer (TFT)** produced accurate multi-horizon forecasts across diverse product categories and stores. It successfully modeled seasonality, price fluctuations, events, and trend shifts present in the retail data.
+
+The **Reinforcement Learning dynamic pricing agent (PPO)** learned to adjust prices in response to forecasted demand. This resulted in:
+
+* ~**25% improvement** in pricing efficiency
+* Better revenue optimization
+* Reduced stock-outs
+* More stable inventory planning
+
+Together, the forecasting and pricing modules demonstrate how deep learning can significantly improve retail analytics, planning, and business decision-making.
+
+---
+
+## 🤝 Acknowledgments
+
+* Walmart M5 Forecasting Dataset (Kaggle)
+* Temporal Fusion Transformer architecture by **Google Research**
+* PPO algorithm from **OpenAI**
+* PyTorch ecosystem and open-source community resources
